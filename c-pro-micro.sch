@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:c-pro-micro-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,20 +26,6 @@ F 4 "Atmel" H 6900 3300 60  0001 C CNN "MF"
 F 5 "ATMEGA32U4-MUR" H 6900 3300 60  0001 C CNN "MPN"
 F 6 "ATMEGA32U4-MURCT-ND" H 6900 3300 60  0001 C CNN "DigikeyPN"
 	1    6900 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle J1
-U 1 1 5AE082B7
-P 1550 3500
-F 0 "J1" H 1150 4950 50  0000 L CNN
-F 1 "USB_C_Receptacle" H 1950 4950 50  0000 R CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 1700 3500 50  0001 C CNN
-F 3 "" H 1700 3500 50  0001 C CNN
-F 4 "Amphenol Commercial Products" H 1550 3500 60  0001 C CNN "MF"
-F 5 "12401610E4#2A" H 1550 3500 60  0001 C CNN "MPN"
-F 6 "12401610E4#2ACT-ND" H 1550 3500 60  0001 C CNN "DigikeyPN"
-	1    1550 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -77,25 +63,15 @@ F 3 "" H 2750 3500 50  0001 C CNN
 	1    2750 3500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2150 3500
-NoConn ~ 2150 3600
-NoConn ~ 2150 3800
-NoConn ~ 2150 3900
-NoConn ~ 2150 4100
-NoConn ~ 2150 4200
-NoConn ~ 2150 4400
-NoConn ~ 2150 4500
-NoConn ~ 2150 4800
-NoConn ~ 2150 4700
 $Comp
 L power:GND #PWR02
 U 1 1 5AE084B8
-P 1650 5300
-F 0 "#PWR02" H 1650 5050 50  0001 C CNN
-F 1 "GND" H 1650 5150 50  0000 C CNN
-F 2 "" H 1650 5300 50  0001 C CNN
-F 3 "" H 1650 5300 50  0001 C CNN
-	1    1650 5300
+P 1550 4200
+F 0 "#PWR02" H 1550 3950 50  0001 C CNN
+F 1 "GND" H 1550 4050 50  0000 C CNN
+F 2 "" H 1550 4200 50  0001 C CNN
+F 3 "" H 1550 4200 50  0001 C CNN
+	1    1550 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -244,21 +220,10 @@ Wire Wire Line
 	2650 2800 2750 2800
 Connection ~ 2750 2800
 Wire Wire Line
-	1650 5100 1650 5200
+	1550 4000 1550 4100
+Connection ~ 1550 4100
 Wire Wire Line
-	1250 5200 1350 5200
-Wire Wire Line
-	1250 5200 1250 5100
-Connection ~ 1650 5200
-Wire Wire Line
-	1350 5100 1350 5200
-Connection ~ 1350 5200
-Wire Wire Line
-	1450 5200 1450 5100
-Connection ~ 1450 5200
-Wire Wire Line
-	1550 5100 1550 5200
-Connection ~ 1550 5200
+	1250 4000 1250 4100
 Wire Wire Line
 	2150 3100 2250 3100
 Wire Wire Line
@@ -279,17 +244,7 @@ Wire Wire Line
 	2650 3200 2900 3200
 Wire Wire Line
 	2250 2500 2150 2500
-Wire Wire Line
-	2250 2100 2250 2200
-Wire Wire Line
-	2150 2200 2250 2200
-Connection ~ 2250 2200
-Wire Wire Line
-	2150 2300 2250 2300
 Connection ~ 2250 2300
-Wire Wire Line
-	2150 2400 2250 2400
-Connection ~ 2250 2400
 Wire Wire Line
 	5650 2150 5000 2150
 Wire Wire Line
@@ -953,34 +908,22 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG026
 U 1 1 5AE0E1A5
-P 1650 5200
-F 0 "#FLG026" H 1650 5275 50  0001 C CNN
-F 1 "PWR_FLAG" H 1650 5350 50  0000 C CNN
-F 2 "" H 1650 5200 50  0001 C CNN
-F 3 "" H 1650 5200 50  0001 C CNN
-	1    1650 5200
+P 1550 4100
+F 0 "#FLG026" H 1550 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1550 4250 50  0000 C CNN
+F 2 "" H 1550 4100 50  0001 C CNN
+F 3 "" H 1550 4100 50  0001 C CNN
+	1    1550 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2750 2800 2750 3500
 Wire Wire Line
-	1650 5200 1650 5300
-Wire Wire Line
-	1350 5200 1450 5200
-Wire Wire Line
-	1450 5200 1550 5200
-Wire Wire Line
-	1550 5200 1650 5200
+	1550 4100 1550 4200
 Wire Wire Line
 	2250 3100 2350 3100
 Wire Wire Line
 	2250 3200 2350 3200
-Wire Wire Line
-	2250 2200 2250 2300
-Wire Wire Line
-	2250 2300 2250 2400
-Wire Wire Line
-	2250 2400 2250 2500
 Wire Wire Line
 	5550 1750 5550 1850
 Wire Wire Line
@@ -1043,4 +986,26 @@ Wire Wire Line
 	5400 2450 5400 2400
 Wire Wire Line
 	5400 2450 5650 2450
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5AE082B7
+P 1550 3100
+F 0 "J1" H 1200 3950 50  0000 L CNN
+F 1 "USB_C_Receptacle" H 1900 3850 50  0000 R CNN
+F 2 "guri-lib:CX90M-16P" H 1700 3100 50  0001 C CNN
+F 3 "https://www.hirose.com/product/document?clcode=CL0480-0513-0-00&productname=CX90M-16P&series=CX&documenttype=2DDrawing&lang=ja&documentid=D174082_ja" H 1700 3100 50  0001 C CNN
+F 4 "Hirose" H 1550 3100 60  0001 C CNN "MF"
+F 5 "CX90M-16P" H 1550 3100 60  0001 C CNN "MPN"
+F 6 "H126318CT-ND" H 1550 3100 60  0001 C CNN "DigikeyPN"
+	1    1550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2100 2250 2300
+Wire Wire Line
+	2250 2300 2250 2500
+Wire Wire Line
+	1250 4100 1550 4100
+NoConn ~ 2150 3600
+NoConn ~ 2150 3700
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=2019年01月27日 日曜日 20:52:11
+update=2019年11月16日 土曜日 00:46:12
 version=1
 last_client=kicad
 [pcbnew]
